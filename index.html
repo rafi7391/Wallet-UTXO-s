@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Bitcoin Wallet</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>My Bitcoin Wallet</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Send Bitcoin</a></li>
+				<li><a href="#">Receive Bitcoin</a></li>
+				<li><a href="#">Transaction History</a></li>
+				<li><a href="#">Settings</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="balance">
+			<h2>Wallet Balance</h2>
+			<p>0.000 BTC</p>
+		</section>
+		<section class="send">
+			<h2>Send Bitcoin</h2>
+			<form>
+				<label for="address">Recipient Address:</label>
+				<input type="text" id="address" name="address" required>
+				<label for="amount">Amount:</label>
+				<input type="number" id="amount" name="amount" step="0.0001" min="0.0001" required>
+				<input type="submit" value="Send">
+			</form>
+		</section>
+		<section class="receive">
+			<h2>Receive Bitcoin</h2>
+			<p>Your Bitcoin Address:</p>
+			<input type="text" value="1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2">
+			<p>QR Code:</p>
+			<img src="qr-code.png" alt="QR Code">
+		</section>
+		<section class="history">
+			<h2>Transaction History</h2>
+			<table>
+				<tr>
+					<th>Date</th>
+					<th>Type</th>
+					<th>Amount</th>
+					<th>Status</th>
+				</tr>
+				<tr>
+					<td>2023-04-14 14:23:00</td>
+					<td>Sent</td>
+					<td>0.01 BTC</td>
+					<td>Confirmed</td>
+				</tr>
+				<tr>
+					<td>2023-04-14 13:10:00</td>
+					<td>Received</td>
+					<td>0.001 BTC</td>
+					<td>Confirmed</td>
+				</tr>
+			</table>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 My Bitcoin Wallet</p>
+	</footer>
+</body>
+</html>
